@@ -23,13 +23,16 @@ cd whats-flying-over-my-house
 ```
 
 2. Run the setup script:
-```bash
-./setup.sh
+
+**with mise**
+```
+mise run setup
 ```
 
-Or manually install dependencies using uv:
+**without mise**
 ```bash
 uv sync
+bash install-opensky.sh
 ```
 
 ## Configuration

@@ -1,0 +1,11 @@
+[settings]
+python.uv_venv_auto = true
+
+[tasks.setup]
+run = '''
+#!/bin/bash
+uv sync
+
+# install opensky from source
+bash install-opensky.sh
+'''
